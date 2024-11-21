@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
             message.style.color = "green";
             message.textContent = "Inicio de sesión exitoso. Redirigiendo...";
             setTimeout(() => {
-                window.location.href = "../Ruta/html/principal.html"; // Redirigir al home principal
+                window.location.href = "principal.html";
             }, 1000);
         } else {
             message.style.color = "red";

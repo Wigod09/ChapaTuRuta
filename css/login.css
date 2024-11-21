@@ -17,12 +17,12 @@ h1 {
 
 img {
     align-items: center;
-    width: 200px;
+    width: 300px;
 }
 
 .login-container, .register-container {
     background: rgb(148, 216, 255);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;

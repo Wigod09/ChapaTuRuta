@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("profile-picture").src = profilePicture;
     } else {
         alert("Por favor, inicia sesión para acceder a tu perfil.");
-        window.location.href = "..../Ruta/html/index.html";
+        window.location.href = "login.html";
     }
 
     // Cambiar la foto de perfil
