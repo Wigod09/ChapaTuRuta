@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChapaTuRuta</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <script src="../js/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
+</head>
+<body>
+    <div class="main-container">
+        <!-- Mapa -->
+        <div id="map"></div>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-bar">
+            <input type="text" id="destination" placeholder="Ingresar destino" />
+            <button id="addDestination" onclick="searchDestination()">➕</button>
+        </div>
+        
+        <!-- Opciones predefinidas -->
+        <div class="saved-locations">
+            <span class="location">UCV <button class="delete">❌</button></span> 
+            <span class="location">Trujillo <button class="delete">❌</button></span> 
+            <span class="location">Plaza de Armas <button class="delete">❌</button></span> 
+            <span class="location">Hospital Víctor Larco Herrera <button class="delete">❌</button></span> 
+            <span class="location">Parque de la Cultura <button class="delete">❌</button></span> 
+            <span class="location">Huanchaco Beach <button class="delete">❌</button></span> 
+            <span class="location">Museo de la Ciudad de Trujillo <button class="delete">❌</button></span> 
+            <span class="location">Estadio Mansiche <button class="delete">❌</button></span> 
+            <span class="location">Mercado Modelo <button class="delete">❌</button></span>
+        </div>      
+
+        <!-- Estaciones cercanas -->
+        <div class="stations">
+            <h3>Micros Cercanas</h3>
+            <div class="station">
+                <p>Micro Santa Cruz</p>
+                <p>Micro 245 - 2 min</p>
+            </div>
+            <div class="station">
+                <p>Micro El Dorado</p>
+                <p>Micro 345 - 4 min</p>
+            </div>
+            <div class="station">
+                <p>Micro El Estelar</p>
+                <p>Micro 445 - 6 min</p>
+            </div>
+        </div>
+
+        <!-- Menú -->
+        <div class="menu">
+            <button id="home">🏠 Home</button>
+            <button id="route">📍 Ruta</button>
+            <button id="ticket">🎫 Ticket</button>
+            <button id="payment">💳 Pago</button>
+            <button id="profile">👤 Perfil</button>
+        </div>
+        
+    </div>
+    
+    <script src="../js/principal.js"></script>
+</body>
+</html>

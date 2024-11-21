@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChapaTuRuta</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+    <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+    <div id="profile-screen" class="screen">
+        <h2>Mi Perfil</h2>
+        <img id="profile-picture" alt="Foto de perfil" class="profile-picture" src="../img/user.jpg">
+        <p id="profile-name">Nombre: </p>
+        <p id="profile-email">Email: </p>
+    
+        <!-- Formulario para cambiar la foto de perfil -->
+        <form id="profile-picture-form">
+            <label for="newProfilePicture">Cambiar foto de perfil:</label>
+            <input type="file" id="newProfilePicture" accept="image/*">
+            <button type="submit" class="profile-button">Actualizar foto</button>
+        </form>
+    
+        <button onclick="logout()" class="profile-button">Cerrar sesión</button> 
+    </div>
+    
+
+    <!-- Menú -->
+    <div class="menu">
+        <button id="home">🏠 Home</button>
+        <button id="route">📍 Ruta</button>
+        <button id="ticket">🎫 Ticket</button>
+        <button id="payment">💳 Pago</button>
+        <button id="profile">👤 Perfil</button>
+    </div>
+
+    <script src="../js/perfil.js"></script>
+</body>
+</html>

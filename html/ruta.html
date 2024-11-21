@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChapaTuRuta</title>
+    <link rel="stylesheet" href="../css/ruta.css">
+    <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+    <div class="route-container">
+        <!-- Header -->
+        <header class="route-header">
+            <button class="back-btn">←</button>
+            <h1>Encontrar ruta</h1>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-container">
+
+            <!-- Selector de Ubicaciones -->
+            <div class="location-selection">
+                <div class="location-selection">
+                    <div class="dotted-gray"></div>
+                    <input id="current-location" type="text" class="location-btn" placeholder="ubicación actual">
+                </div>
+
+                <div class="dotted-line"></div>
+                
+                <div class="location-selection">
+                    <div class="dotted-blue"></div>
+                    <input id="destination" type="text" class="location-btn" placeholder="destino">
+                </div>
+
+                <div class="switch-icon">↕️</div>
+
+            </div>
+
+            <!-- Opciones -->
+            <div class="options">
+                <button class="option-btn">
+                    <span class="icon">🕒</span> 
+                    <span id="selected-option">Sale ahora</span> 
+                    <span class="dropdown">▼</span>
+                </button>
+                <ul class="dropdown-menu hidden">
+                    <li class="dropdown-item">Sale ahora</li>
+                    <li class="dropdown-item">En 15 minutos</li>
+                    <li class="dropdown-item">En 30 minutos</li>
+                    <li class="dropdown-item">En 1 hora</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="routes-container">
+            <!-- Recommended Route -->
+            <section class="recommended-route">
+                <h2>Recomendado</h2>
+                <div id="recommended-routes"></div>
+            </section>
+
+            <!-- Other Routes -->
+            <section class="other-routes">
+                <h2>Otras rutas</h2>
+                <div id="other-routes"></div>
+            </section>
+        </div>
+
+
+        <!-- Menú -->
+        <div class="menu">
+            <button id="home">🏠 Home</button>
+            <button id="route">📍 Ruta</button>
+            <button id="ticket">🎫 Ticket</button>
+            <button id="payment">💳 Pago</button>
+            <button id="profile">👤 Perfil</button>
+        </div>
+
+    </div>
+    <script src="../js/ruta.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+img {
+    align-items: center;
+    width: 200px;
+}
+
+.login-container, .register-container {
+    background: rgb(148, 216, 255);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%; /* Se adapta a pantallas pequeñas */
+    max-width: 400px; /* Máximo tamaño en pantallas grandes */
+    height: auto; /* Se ajusta automáticamente */
+}
+
+input {
+    width: 100%; /* Uso completo del contenedor */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%; /* Botón ocupa toda la anchura */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    img {
+        width: 150px; /* Imagen más pequeña en pantallas medianas */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Ajuste del tamaño de texto */
+    }
+
+    .login-container, .register-container {
+        width: 100%; /* Uso completo de la pantalla */
+        max-width: 350px;
+    }
+
+    input, button {
+        font-size: 14px; /* Tamaño reducido en dispositivos medianos */
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 120px; /* Imagen aún más pequeña en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .login-container, .register-container {
+        padding: 15px;
+        width: 100%;
+    }
+
+    input, button {
+        font-size: 12px; /* Tamaño más pequeño en dispositivos pequeños */
+    }
+}
