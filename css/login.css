@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: whitesmoke;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
 h1 {
@@ -21,13 +21,14 @@ img {
 }
 
 .login-container, .register-container {
-    background: rgb(148, 216, 255);
-    padding: 10px;
+    background: rgba(88, 88, 88, 0.4);
+    padding: 20px;
+    border-radius: 10px;
     border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     text-align: center;
     width: 90%; /* Se adapta a pantallas pequeñas */
-    max-width: 400px; /* Máximo tamaño en pantallas grandes */
+    max-width: 300px; /* Máximo tamaño en pantallas grandes */
     height: auto; /* Se ajusta automáticamente */
 }
 
@@ -100,7 +101,7 @@ a:hover {
 
 @media (max-width: 480px) {
     img {
-        width: 120px; /* Imagen aún más pequeña en pantallas pequeñas */
+        width: 200px; /* Imagen aún más pequeña en pantallas pequeñas */
     }
 
     h1 {
@@ -109,7 +110,7 @@ a:hover {
 
     .login-container, .register-container {
         padding: 15px;
-        width: 100%;
+        width: 95%;
     }
 
     input, button {
